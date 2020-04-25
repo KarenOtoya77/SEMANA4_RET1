@@ -42,7 +42,7 @@ padding: 50px;
 }
 
 
-.skill{
+.skills{
     background: #9122FF;
     font-family: Arial;
     font-style: normal;
@@ -134,4 +134,54 @@ padding: 50px;
     display:inline;
     padding-left:3px;
     padding-right:3px;
+    text-align: center;
 }
+
+
+
+
+.skill {
+    list-style-type: none;
+  }
+  
+  .progress {
+    position: relative;
+    width: 400px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress .mark {
+    position: absolute;
+    left:-60%;
+    top: 0;
+    background: #57EFF9;
+    display: block;  
+    width: 100%;
+    height:20px;
+  }
+  
+  .progress:hover .mark {
+    animation: progress 2s linear infinite;
+  }
+  
+   @keyframes progress {
+    from { 
+      left: -60%;
+    }
+    to { 
+      left: 0%;
+    }
+   }
+  
+  
+   .link:hover {
+    transform: scale(1.2);
+  }
+
+  .text {
+    text-shadow: 2px 4px cadetblue, -2px -4px blue;
+    text-align: center;
+  }
